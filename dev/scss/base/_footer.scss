@@ -1,0 +1,26 @@
+/*///////////////
+/// FOOTER
+*/ //////////////
+footer {
+	padding: $spacing-default $spacing-small $spacing-large;
+
+	font-family: $font-family-primary;
+
+	a {
+		color: $color-grey-light;
+		text-decoration: none;
+		transition: 0.2s color ease;
+
+		@include active-states() {
+			color: $color-grey;
+		}
+	}
+
+	ul {
+		display: flex;
+		width: 100%;
+		li:first-child {
+			margin-right: auto;
+		}
+	}
+}

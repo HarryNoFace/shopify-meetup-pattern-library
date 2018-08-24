@@ -1,0 +1,13 @@
+/*///////////////
+/// ANCHOR
+*/ //////////////
+
+.link-inherit {
+	color: inherit;
+	text-decoration: none;
+
+	@include active-states() {
+		color: inherit;
+		text-decoration: none;
+	}
+}

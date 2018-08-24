@@ -1,0 +1,29 @@
+.update {
+	margin: $spacing-large 0;
+
+	a {
+		color: $color-primary;
+		font-size: 14px;
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.update__intro {
+	margin: $spacing-large 0;
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		line-height: 1.4;
+	}
+}

@@ -1,0 +1,88 @@
+/*///////////////
+/// BUTTON
+*/ //////////////
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	margin: $spacing-default 0;
+	padding: $spacing-default $spacing-large;
+
+	cursor: pointer;
+	display: inline;
+	font-size: 14px;
+	font-weight: $font-weight-semi;
+	letter-spacing: 2px;
+	outline: none;
+	text-transform: uppercase;
+	transition: 0.2s background-color ease;
+
+	i {
+		margin-left: 24px;
+	}
+
+	@include bp-min-width($bp-lg) {
+		margin: 24px 0;
+
+		font-size: 16px;
+	}
+
+	header & {
+		background-color: transparent;
+
+		@include active-states() {
+			background-color: transparent;
+		}
+	}
+}
+
+.btn-small {
+	flex-grow: 0;
+	margin: 16px 0;
+	padding: $spacing-small $spacing-default;
+
+	font-size: 12px;
+
+	@include bp-min-width($bp-lg) {
+		font-size: 14px;
+	}
+}
+
+.btn-block {
+	display: block;
+	margin: 0;
+}
+
+.btn-ghost {
+	background: none;
+
+	&.btn-primary {
+		border: 1px solid $color-primary;
+		color: $color-primary;
+
+		@include active-states() {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+	}
+
+	&.btn-danger {
+		border: 1px solid $color-red;
+		color: $color-red;
+
+		@include active-states() {
+			background-color: $color-red;
+			color: $color-white;
+		}
+	}
+}
+
+.btn-banner {
+	background-color: $color-primary;
+	border: none;
+	color: $color-white;
+
+	width: 100%;
+}

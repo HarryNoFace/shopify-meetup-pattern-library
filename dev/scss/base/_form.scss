@@ -1,0 +1,136 @@
+/*///////////////
+/// FORM
+*/ //////////////
+
+form {
+	button {
+		display: flex;
+		margin-top: auto;
+		margin-bottom: 0;
+	}
+}
+
+input,
+select {
+	display: block;
+	margin: 16px 0;
+	min-height: 48px;
+	padding: $spacing-small;
+	width: 100%;
+
+	border: 1px solid $color-grey-lightest;
+	.input-group & {
+		margin: 0;
+	}
+}
+
+input[type="number"] {
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+label {
+	display: block;
+	margin-bottom: 4px;
+
+	color: $color-black;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+
+	& + input,
+	& + select {
+		margin-top: 0px;
+	}
+}
+
+select {
+	background-color: white;
+	line-height: 1.5em;
+	padding: 0.5em 3.5em 0.5em 1em;
+
+	/* reset */
+	appearance: none;
+
+	background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position: calc(100% - 20px) calc(1em + 2px),
+		calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		padding: 0.5em 1em;
+
+		background: none;
+	}
+}
+
+/* Customize the label (the container) */
+.checkbox {
+	position: relative;
+	margin: 16px 0;
+	padding-left: 32px;
+
+	cursor: pointer;
+	user-select: none;
+
+	input,
+	label {
+		margin: 0;
+		padding: 0;
+		width: auto;
+	}
+
+	input {
+		position: absolute;
+
+		cursor: pointer;
+		opacity: 0;
+
+		&:focus {
+			~ .checkmark {
+				outline: 1px dotted $color-primary;
+			}
+		}
+	}
+
+	input ~ .checkmark {
+		background-color: $color-white;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 60%;
+		border: 1px solid $color-grey-lightest;
+	}
+
+	input:checked ~ .checkmark {
+		background-color: $color-primary;
+		border: 1px solid lighten($color-primary, 10%);
+
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+");
+
+		&:after {
+			display: block;
+		}
+	}
+}
+
+.checkmark {
+	height: 24px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 24px;
+
+	transition: 0.2s all ease;
+}
+
+textarea {
+	min-height: 100px;
+	resize: vertical;
+	width: 100%;
+}

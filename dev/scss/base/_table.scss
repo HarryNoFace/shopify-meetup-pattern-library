@@ -1,0 +1,98 @@
+/*///////////////
+/// TABLE
+*/ //////////////
+
+table {
+	border-collapse: collapse;
+	margin: 40px 0;
+	max-width: 100%;
+	width: 100%;
+	text-align: left;
+
+	border: 1px solid $color-grey-lightest;
+
+	h1 + &,
+	h2 + &,
+	h3 + &,
+	h4 + &,
+	h5 + &,
+	h6 + &,
+	label + & {
+		margin-top: $spacing-default;
+	}
+}
+
+thead {
+	background-color: $color-white;
+	border-bottom: 1px solid $color-grey-lightest;
+	border-top: 1px solid $color-grey-lightest;
+}
+
+td,
+th {
+	padding: $spacing-default $spacing-small;
+}
+
+td {
+	a {
+		white-space: "nowrap";
+	}
+}
+
+th {
+	letter-spacing: 1px;
+	white-space: nowrap;
+}
+
+tr {
+	vertical-align: baseline;
+}
+
+tbody tr {
+	background-color: $color-white;
+	border-top: 1px solid darken($color-white, 7.5%);
+	transition: background-color 0.2s ease;
+
+	&:nth-of-type(even) {
+		background-color: rgba($color-grey-lightest, 0.05);
+	}
+
+	@include active-states() {
+		background-color: #f5f8fc;
+		.table__actions * {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.table__actions {
+	a {
+		display: inline-block;
+		color: $color-primary;
+		padding: 0 $spacing-tiny;
+		margin: 0 $spacing-tiny;
+		text-decoration: none;
+		& ~ a {
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				height: 50%;
+				left: -$spacing-tiny;
+				position: absolute;
+				top: 25%;
+				width: 1px;
+				background-color: rgba($color-primary, 0.4);
+			}
+		}
+		@include active-states() {
+			color: darken($color-primary, 20%);
+		}
+	}
+	& * {
+		opacity: 0;
+		transition: 0.2s opacity ease;
+		visibility: hidden;
+	}
+}

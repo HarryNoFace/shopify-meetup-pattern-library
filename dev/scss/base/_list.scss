@@ -1,0 +1,18 @@
+ul,
+.list {
+}
+
+.list-default {
+	margin: $spacing-default 0;
+	padding: 0;
+
+	list-style: none;
+
+	li {
+		margin: 0;
+
+		~ li {
+			margin-top: $spacing-default;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+/*///////////////
+/// VARS
+*/ //////////////
+
+/* SPACING UNITS */
+$spacing-default: 16px;
+$spacing-tiny: $spacing-default/4;
+$spacing-small: $spacing-default/2;
+$spacing-large: $spacing-default * 2;
+$spacing-huge: $spacing-default * 4;
+
+/* BORDERS */
+$border-radius-default: 3px;
+
+/* BREAKPOINTS */
+$bp-mobile-small: 320px;
+$bp-mobile: 375px;
+$bp-mobile-large: 440px;
+$bp-tablet: 768px;
+$bp-grid-stack: $bp-tablet;
+$bp-tablet-large: 1024px;
+$bp-desktop: 1400px;
+$bp-desktop-large: 1920px;
+$bp-4k: 2560px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+/* COLOURS */
+$color-white: #ffffff;
+$color-off-white: #f1f1f1;
+$color-grey-lightest: #dbdbdb;
+$color-grey-light: #acacac;
+$color-grey: #202c39;
+$color-black: #141213;
+$color-red: red;
+$color-primary: #0057ff;
+$color-secondary: #f2f2f2;
+$color-tertiary: #e9e9e9;
+
+/* FONT VARIABLES */
+$font-family-primary: "SuisseIntl", Arial, Helvetica, Roboto, sans-serif;
+$font-weight-default: 400;
+$font-weight-semi: 500;
+$font-weight-bold: 700;
+
+/* GRID VARIABLES */
+$grid-gap-default: $spacing-large;
+$grid-gap-large: $spacing-large * 1.5;
+$grid-gap-huge: $spacing-huge * 1.5;
+
+/* Z-INDEX UNITS */
+$z-index-front: 100;
+$z-index-forward: 1;
+$z-index-default: 0;
+$z-index-backward: -1;
+$z-index-back: -100;

@@ -1,0 +1,17 @@
+.content {
+	margin: $spacing-large 0 $spacing-small;
+
+	a {
+		color: $color-primary;
+		font-size: 14px;
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
