@@ -2,25 +2,44 @@
 /// FOOTER
 */ //////////////
 footer {
+	background: $color-grey;
 	padding: $spacing-default $spacing-small $spacing-large;
 
 	font-family: $font-family-primary;
+	text-transform: uppercase;
 
 	a {
-		color: $color-grey-light;
+		color: $color-white;
 		text-decoration: none;
-		transition: 0.2s color ease;
+	}
 
-		@include active-states() {
-			color: $color-grey;
-		}
+	h3 {
+		color: $color-white;
+		text-transform: uppercase;
+
+		margin: $spacing-default 0 $spacing-tiny;
 	}
 
 	ul {
-		display: flex;
-		width: 100%;
-		li:first-child {
-			margin-right: auto;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		a {
+			color: $color-grey-light;
+			text-decoration: none;
+			transition: 0.2s color ease;
+
+			@include active-states() {
+				color: $color-grey-lightest;
+			}
+		}
+
+		li {
+			padding: 6px 0;
+
+			font-size: 14px;
+			letter-spacing: 0.5px;
 		}
 	}
 }

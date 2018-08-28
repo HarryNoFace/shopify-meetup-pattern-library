@@ -2,6 +2,7 @@
 
 hr {
 	margin: 24px auto;
+	width: auto;
 
 	@include bp-min-width($bp-lg) {
 		margin: 40px auto;

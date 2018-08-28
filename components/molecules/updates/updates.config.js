@@ -1,5 +1,5 @@
 module.exports = {
 	context: {
-		contentTitle: "Title"
+		updateTitle: "Title"
 	}
 };

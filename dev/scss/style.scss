@@ -50,6 +50,8 @@ $spacers: map-merge(
 @import "base/main.scss";
 @import "base/nav.scss";
 @import "base/table.scss";
+@import "components/about.scss";
 @import "components/content.scss";
 @import "components/hero.scss";
+@import "components/subscribe.scss";
 @import "components/update.scss";

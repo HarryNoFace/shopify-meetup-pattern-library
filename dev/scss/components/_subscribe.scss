@@ -1,0 +1,17 @@
+.subscribe {
+	background: $color-off-white;
+	padding-bottom: $spacing-default;
+
+	h2 {
+		text-align: center;
+		margin: $spacing-large 0;
+	}
+
+	input {
+		border: none;
+	}
+
+	button {
+		padding: none;
+	}
+}

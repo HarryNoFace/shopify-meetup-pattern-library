@@ -8,7 +8,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	margin: $spacing-default 0;
-	padding: $spacing-default $spacing-large;
+	padding: $spacing-default 0;
 
 	cursor: pointer;
 	display: inline;

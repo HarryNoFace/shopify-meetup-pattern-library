@@ -1,7 +1,23 @@
 {{> '@hero' }}
 <div class="container">
 	<div class="row">
-		{{> '@content' }} {{> '@content' }} {{> '@content' }}
-
+		{{#each eventsData}} {{> @content}} {{/each}}
+		<div class="col-12">
+			<button type="button" class="btn-banner">View all events</button>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-12 update__intro">
+			<h2>Shopify News and Updates</h2>
+			<p>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+				him to Washington</p>
+		</div>
+		{{> @updates}} {{> @updates}} {{> @updates}}
+		<div class="col-12">
+			<button type="button" class="btn-banner">View all updates</button>
+		</div>
+		{{> '@subscribe'}}
 	</div>
 </div>
+{{> '@footer'}}
