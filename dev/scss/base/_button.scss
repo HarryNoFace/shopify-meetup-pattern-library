@@ -96,12 +96,13 @@ input[type="button"] {
 	border: none;
 	color: $color-white;
 	display: block;
-	min-width: 220px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 
 	@include bp-min-width($bp-md) {
 		display: inline;
+		width: 220px;
 	}
 
 	&-banner {

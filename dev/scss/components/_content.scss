@@ -16,6 +16,7 @@
 	}
 
 	@include bp-min-width($bp-md) {
+		margin: $spacing-large 0 $spacing-default;
 		padding: 0 $spacing-default;
 	}
 }
