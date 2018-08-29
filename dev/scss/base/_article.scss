@@ -78,6 +78,10 @@ article {
 		p {
 			letter-spacing: 0.75px;
 			margin: $spacing-large 0;
+
+			&:last-of-type {
+				margin-bottom: $spacing-huge;
+			}
 		}
 	}
 }

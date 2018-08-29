@@ -1,6 +1,7 @@
 <div class="container single-event">
 	<div class="row">
-		<div class="col-12">
+		{{> @navbar}}
+		<div class="col-12 col-md-9 pt-md-5">
 			<article>
 				<h1>Shopify Hampshire</h1>
 				<h4>June 17, 2019</h4>
@@ -23,14 +24,18 @@
 						him to Washington.
 					</li>
 				</ul>
-				<button type="button" class="btn-banner">Book a free ticket</button>
+				<div class="col-12 px-0">
+					<button type="button" class="btn">Book a free ticket</button>
+				</div>
 			</article>
 		</div>
+		<div class="col-12 mt-4 px-3">
+			<h2>Related Events</h2>
+		</div>
 		{{#each eventsData}} {{> @content}} {{/each}}
-		<div class="col-12">
+		<div class="col-12 d-md-none">
 			<button type="button" class="btn-banner">View all events</button>
 		</div>
-		{{> @subscribe}}
 	</div>
 </div>
-{{> @footer}}
+{{> @subscribe}} {{> @footer}}

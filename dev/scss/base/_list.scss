@@ -38,4 +38,10 @@
 		padding-bottom: $spacing-small;
 		position: relative;
 	}
+
+	@include bp-min-width($bp-md) {
+		li {
+			padding-bottom: $spacing-large;
+		}
+	}
 }

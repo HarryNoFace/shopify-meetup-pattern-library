@@ -1,7 +1,7 @@
 "use strict";
 
 const faker = require("faker");
-const eventsCount = 3;
+const eventsCount = 6;
 const events = [];
 
 for (var i = 0; i < eventsCount; i++) {

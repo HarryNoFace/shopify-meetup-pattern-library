@@ -90,3 +90,25 @@ input[type="button"] {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.btn {
+	background-color: $color-primary;
+	border: none;
+	color: $color-white;
+	display: block;
+	min-width: 220px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include bp-min-width($bp-md) {
+		display: inline;
+	}
+
+	&-banner {
+		display: block;
+		width: 100%;
+		max-width: 328px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
