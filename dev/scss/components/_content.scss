@@ -14,4 +14,8 @@
 	p {
 		font-size: 14px;
 	}
+
+	@include bp-min-width($bp-md) {
+		padding: 0 $spacing-default;
+	}
 }

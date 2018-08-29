@@ -3,6 +3,8 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	padding-bottom: $spacing-huge;
+	padding-top: $spacing-default;
 	position: relative;
 
 	&::before {
@@ -14,10 +16,40 @@
 		width: 100%;
 		height: 100%;
 	}
+
+	@include bp-min-width($bp-md) {
+		nav {
+			margin-left: auto;
+			margin-right: 0;
+			z-index: 2;
+
+			li {
+				float: left;
+				margin-left: $spacing-default;
+			}
+
+			li a {
+				font-size: 14px;
+				letter-spacing: 1.5px;
+				color: $color-white;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+			ul {
+				display: inline;
+				list-style-type: none;
+				padding: 0;
+			}
+		}
+	}
 }
 
 .hero__title {
 	margin: $spacing-large 0 $spacing-default;
+	@include bp-min-width($bp-md) {
+		margin-top: $spacing-huge;
+	}
 }
 
 .hero__summary {

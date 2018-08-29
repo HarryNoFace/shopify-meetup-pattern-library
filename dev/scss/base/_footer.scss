@@ -8,6 +8,16 @@ footer {
 	font-family: $font-family-primary;
 	text-transform: uppercase;
 
+	@include bp-min-width($bp-md) {
+		ul a li {
+			letter-spacing: 2px;
+		}
+
+		h3 {
+			letter-spacing: 2px;
+		}
+	}
+
 	a {
 		color: $color-white;
 		text-decoration: none;
@@ -17,7 +27,7 @@ footer {
 		color: $color-white;
 		text-transform: uppercase;
 
-		margin: $spacing-default 0 $spacing-tiny;
+		margin: 20px 0 $spacing-tiny;
 	}
 
 	ul {

@@ -1,13 +1,11 @@
 /* ARTICLE */
 
 article {
-	padding: $spacing-large $spacing-default;
 	> h2,
 	> h3,
 	> h4,
 	> h5 {
 		margin-bottom: 16px;
-		font-weight: 700;
 	}
 	/* Advanced vertical rhythym based off of https://medium.com/@sebastian.eberlein/advanced-vertical-margins-4ac69f032f79 */
 	> * + * {
@@ -59,5 +57,27 @@ article {
 	}
 	@include bp-min-width($bp-desktop) {
 		padding: $spacing-huge $spacing-large;
+	}
+}
+
+.single-event {
+	article {
+		h1 {
+			margin: $spacing-large 0 $spacing-default;
+		}
+
+		h2 {
+			margin: $spacing-small 0;
+		}
+
+		h4 {
+			font-weight: 700;
+			margin: $spacing-small 0 $spacing-default;
+		}
+
+		p {
+			letter-spacing: 0.75px;
+			margin: $spacing-large 0;
+		}
 	}
 }

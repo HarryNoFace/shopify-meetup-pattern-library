@@ -84,5 +84,9 @@ input[type="button"] {
 	border: none;
 	color: $color-white;
 
+	display: block;
 	width: 100%;
+	max-width: 328px;
+	margin-right: auto;
+	margin-left: auto;
 }

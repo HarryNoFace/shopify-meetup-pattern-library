@@ -1,7 +1,3 @@
-ul,
-.list {
-}
-
 .list-default {
 	margin: $spacing-default 0;
 	padding: 0;
@@ -14,5 +10,32 @@ ul,
 		~ li {
 			margin-top: $spacing-default;
 		}
+	}
+}
+
+.list--tick {
+	list-style-type: none;
+	padding-left: $spacing-large;
+
+	font-size: 14px;
+	li {
+		&::before {
+			color: #2e56a4;
+			display: inline-block;
+			margin-right: $spacing-small;
+			position: absolute;
+			left: -$spacing-large;
+
+			content: "\f058";
+			font-family: "Font Awesome 5 Pro";
+			font-size: 1.2rem;
+			font-style: normal;
+			font-variant: normal;
+			-webkit-font-smoothing: antialiased;
+			font-weight: 900;
+			text-rendering: auto;
+		}
+		padding-bottom: $spacing-small;
+		position: relative;
 	}
 }

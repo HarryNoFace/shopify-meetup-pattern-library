@@ -1,0 +1,36 @@
+<div class="container single-event">
+	<div class="row">
+		<div class="col-12">
+			<article>
+				<h1>Shopify Hampshire</h1>
+				<h4>June 17, 2019</h4>
+				<h4>Palmerston Lecture Theatre, Solent Conference Centre</h4>
+				<p>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+					him to Washington.</p>
+				<p>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+					him to Washington.</p>
+				<p>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+					him to Washington.</p>
+				<h2 style="text-transform:initial;">Who is this meetup for?</h2>
+				<ul class="list--tick">
+					<li>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+						him to Washington.
+					</li>
+					<li>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+						him to Washington.
+					</li>
+					<li>Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked tree. We'll send
+						him to Washington.
+					</li>
+				</ul>
+				<button type="button" class="btn-banner">Book a free ticket</button>
+			</article>
+		</div>
+		{{#each eventsData}} {{> @content}} {{/each}}
+		<div class="col-12">
+			<button type="button" class="btn-banner">View all events</button>
+		</div>
+		{{> @subscribe}}
+	</div>
+</div>
+{{> @footer}}

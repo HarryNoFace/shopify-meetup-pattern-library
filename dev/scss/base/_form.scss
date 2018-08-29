@@ -14,7 +14,7 @@ input,
 select {
 	display: block;
 	margin: 16px 0;
-	min-height: 48px;
+	min-height: 32px;
 	padding: $spacing-small;
 	width: 100%;
 
@@ -133,4 +133,14 @@ textarea {
 	min-height: 100px;
 	resize: vertical;
 	width: 100%;
+}
+
+.contact {
+	margin: $spacing-large 0 $spacing-default;
+}
+
+input,
+textarea,
+select {
+	border: 1px $color-grey-light solid;
 }
