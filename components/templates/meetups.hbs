@@ -1,7 +1,7 @@
 {{> '@hero' }}
 <div class="container">
 	<div class="row">
-		{{> '@content' }} {{> '@content' }} {{> '@content' }} {{> '@content' }} {{> '@content' }}
+		{{#each eventsData}} {{> @content}} {{/each}}
 	</div>
 </div>
 {{> '@subscribe'}} {{> '@footer'}}
