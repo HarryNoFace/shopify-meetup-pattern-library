@@ -113,3 +113,14 @@ input[type="button"] {
 		margin-left: auto;
 	}
 }
+
+a {
+	&.btn {
+		text-align: center;
+		text-decoration-line: none;
+		appearance: none;
+		-webkit-appearance: none;
+		padding-left: $spacing-default;
+		padding-right: $spacing-default;
+	}
+}

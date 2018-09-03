@@ -4,6 +4,11 @@
 	a {
 		color: $color-primary;
 		font-size: 14px;
+
+		h2 {
+			color: $color-black;
+			text-decoration: none !important;
+		}
 	}
 
 	img {

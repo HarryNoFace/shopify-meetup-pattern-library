@@ -1,9 +1,9 @@
-{{> '@hero' }}
+{{> '@hero-blue' }}
 <div class="container">
 	<div class="row">
 		{{#each eventsData}} {{> @content}} {{/each}}
 		<div class="col-12">
-			<button type="button" class="btn-banner">View all events</button>
+			<a href="#" type="button" class="btn btn-banner">View all events</a>
 		</div>
 	</div>
 	<hr>
@@ -17,7 +17,7 @@
 	<div class="row">
 		{{> @updates}} {{> @updates}} {{> @updates}} {{> @updates}} {{> @updates}} {{> @updates}}
 		<div class="col-12 align-content-center">
-			<button type="button" class="btn-banner">View all updates</button>
+			<a href="#" type="button" class="btn btn-banner">View all updates</a>
 		</div>
 	</div>
 </div>
